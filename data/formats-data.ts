@@ -1772,6 +1772,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "(PU)",
 		doublesTier: "(DUU)",
 	},
+	octillerymega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	delibird: {
 		randomBattleMoves: ["freezedry", "memento", "rapidspin", "spikes"],
 		randomBattleLevel: 100,
