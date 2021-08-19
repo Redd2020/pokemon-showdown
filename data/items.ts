@@ -7104,4 +7104,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "CAP",
 	},
+	octillerite: {
+		name: "Octillerite",
+		spritenum: 583,
+		megaStone: "Octillery-Mega",
+		megaEvolves: "Octillery",
+		itemUser: ["Octillery"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -2,
+		gen: 6,
+		isNonstandard: "Past",
+	},
 };
