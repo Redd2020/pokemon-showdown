@@ -3616,6 +3616,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "(PU)",
 		doublesTier: "(DUU)",
 	},
+	maractusmega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	dwebble: {
 		tier: "LC",
 	},
