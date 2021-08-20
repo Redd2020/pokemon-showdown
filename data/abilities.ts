@@ -4506,4 +4506,16 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: -4,
 	},
+	heavyhooves: {
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['punch']) {
+				this.debug('Iron Fist boost');
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		name: "Heavy Hooves",
+		rating: 3,
+		num: -5,
+	},
 };
