@@ -697,4 +697,14 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		},
 		onFoeTrapPokemon(pokemon) {},
 	},
+	heavyhooves: {
+		inherit: true,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['punch']) {
+				return basePower * 1.33;
+			}
+		},
+		desc: "This Pokemon's kick-based attacks have their power multiplied by 1.33.",
+		shortDesc: "This Pokemon's kick-based attacks have 1.33x power.",
+	},
 };
