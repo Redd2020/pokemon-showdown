@@ -7132,4 +7132,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
+	zebstrikanite: {
+		name: "Zebstrikanite",
+		spritenum: 628,
+		megaStone: "Zebstrika-Mega",
+		megaEvolves: "Zebstrika",
+		itemUser: ["Zebstrika"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -4,
+		gen: 6,
+		isNonstandard: "Past",
+	},
 };
