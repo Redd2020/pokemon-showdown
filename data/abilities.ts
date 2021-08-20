@@ -4493,6 +4493,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		
 		},
+		onImmunity(type, pokemon) {
+			if (type === 'sandstorm') return false;
+		},
 		name: "Desert Dash",
 		rating: 3,
 		num: -4,
