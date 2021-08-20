@@ -700,7 +700,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 	heavyhooves: {
 		inherit: true,
 		onBasePower(basePower, attacker, defender, move) {
-			if (move.flags['punch']) {
+			if (move.flags['kick']) {
 				return basePower * 1.33;
 			}
 		},
