@@ -4488,7 +4488,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	desertdash: {
 		onModifySpe(spe, pokemon) {
-			if (['sunnyday', 'desolateland', 'sandstorm'].includes(pokemon.effectiveWeather())) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
 				return this.chainModify(2);
 			}
 		
