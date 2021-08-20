@@ -4495,7 +4495,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(2);
 			}
 			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
-				return this.chainModify(2);
+				return this.chainModify(0.5);
 			}
 		
 		},
