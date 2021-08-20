@@ -7119,7 +7119,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		isNonstandard: "Past",
 	},
 	maractusite: {
-		name: "maractusite",
+		name: "Maractusite",
 		spritenum: 616,
 		megaStone: "Maractus-Mega",
 		megaEvolves: "Maractus",
