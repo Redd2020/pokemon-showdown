@@ -32,8 +32,24 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 			if (this.field.isWeather('hail')) {
 				return this.chainModify(1.5);
 			}
+			
 		},
 		shortDesc: "If Hail is active, this Pokemon's Speed is multiplied by 1.5.",
+	},
+	desertdash: {
+		inherit: true,
+		onModifySpe(spe) {
+			if (this.field.isWeather(['sunnyday', 'desolateland'])) {
+				return this.chainModify(1.5);
+			}
+			if (this.field.isWeather('sandstorm')) {
+				return this.chainModify(1.5);
+			}
+			if (this.field.isWeather(['raindance', 'primordialsea'])) {
+				return this.chainModify(0.5);
+			}
+		},
+		shortDesc: "If Sunny Day or Sandstorm is active, this Pokemon's Speed is multiplied by 1.5. If Drizzle is active, this Pokemon's Speed is multiplied by 0.5",
 	},
 	forecast: {
 		inherit: true,

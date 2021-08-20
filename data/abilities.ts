@@ -4491,6 +4491,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
 				return this.chainModify(2);
 			}
+			if (this.field.isWeather('sandstorm')) {
+				return this.chainModify(2);
+			}
+			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(2);
+			}
 		
 		},
 		onImmunity(type, pokemon) {
