@@ -2340,4 +2340,8 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Octillerite",
 		desc: "If held by an Octillery, this item allows it to Mega Evolve in battle.",
 	},
+	maractusite: {
+		name: "Maractus",
+		desc: "If held by an Maractus, this item allows it to Mega Evolve in battle.",
+	},
 };

@@ -7106,7 +7106,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	octillerite: {
 		name: "Octillerite",
-		spritenum: 583,
+		spritenum: 585,
 		megaStone: "Octillery-Mega",
 		megaEvolves: "Octillery",
 		itemUser: ["Octillery"],
@@ -7115,6 +7115,20 @@ export const Items: {[itemid: string]: ItemData} = {
 			return true;
 		},
 		num: -2,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	maractusite: {
+		name: "maractusite",
+		spritenum: 616,
+		megaStone: "Maractus-Mega",
+		megaEvolves: "Maractus",
+		itemUser: ["Maractus"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -3,
 		gen: 6,
 		isNonstandard: "Past",
 	},
