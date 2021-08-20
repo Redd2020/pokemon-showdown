@@ -1739,6 +1739,6 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	desertdash: {
 		name: "Desert Dash",
 		desc: "If Sunny Day or Sandstorm is active and this Pokemon is not holding Utility Umbrella, this Pokemon's Speed is doubled. If Drizzle is active, and this Pokemon is not holding Utility Umbrella, this Pokemon's Speed is halved.",
-		shortDesc: "If Sunny Day or Sandstorm is active, this Pokemon's Speed is doubled. If Drizzle is active, this Pokemon's Speed is halved.",
+		shortDesc: "If Sunny Day or Sandstorm is active, Speed is doubled. If Drizzle is, Speed is halved.",
 	},
 };
