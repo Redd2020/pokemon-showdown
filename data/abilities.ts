@@ -4564,4 +4564,14 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: -7,
 	},
+	expertise: {
+		onModifyDamage(damage, source, target, move) {
+			if (move && target.getMoveHitData(move).typeMod > 0) {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		name: "Expertise",
+		rating: 3,
+		num: -8,
+	},
 };
