@@ -175,6 +175,18 @@ class Giveaway {
 								break;
 							}
 						}
+						if (forme.endsWith('ethereal')) {
+							if (/ethereal)?/.test(text)) {
+								spriteid += '-ethereal';
+								break;
+							}
+						}
+						if (forme.endsWith('akuurian')) {
+							if (/akuurian)?/.test(text)) {
+								spriteid += '-akuurian';
+								break;
+							}
+						}
 						if (text.includes(forme)) {
 							spriteid += '-' + forme.substr(name.length);
 							break; // We don't want to end up with landorus-therian-therian
