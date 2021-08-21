@@ -2974,6 +2974,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	chatotmega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	spiritomb: {
 		randomBattleMoves: ["foulplay", "shadowsneak", "suckerpunch", "poltergeist", "trick"],
 		randomBattleLevel: 88,
