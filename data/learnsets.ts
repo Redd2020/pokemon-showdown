@@ -82448,7 +82448,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			wildcharge: ["8M", "7M", "6M", "5M"],
 			wish: ["8E", "7E", "6E", "5E", "4E", "3E", "3S1"],
 			zapcannon: ["7V"],
-			plamsafists: ["8M"]
+			plasmafists: ["8M"]
 		},
 	},
 };
