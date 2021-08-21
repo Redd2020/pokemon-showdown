@@ -4537,4 +4537,18 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4,
 		num: -6,
 	},
+	duckduckdance: {
+		onModifySpe(spe, pokemon) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(2);
+			}
+			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(2);
+			}
+		
+		},
+		name: "Duck, Duck, Dance!",
+		rating: 3,
+		num: -7,
+	},
 };
