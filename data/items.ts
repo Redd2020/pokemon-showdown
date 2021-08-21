@@ -7148,7 +7148,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	toxtricitite: {
 		name: "Toxtricitite",
-		spritenum: 628,
+		spritenum: 629,
 		megaStone: "Toxtricity-Mega",
 		megaEvolves: "Toxtricity",
 		itemUser: ["Toxtricity"],
