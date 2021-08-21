@@ -4427,6 +4427,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "PU",
 		doublesTier: "(DUU)",
 	},
+	aromatissemega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	swirlix: {
 		tier: "NFE",
 	},

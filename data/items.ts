@@ -7160,4 +7160,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
+	aromatissite: {
+		name: "Aromatissite",
+		spritenum: 577,
+		megaStone: "Aromatisse-Mega",
+		megaEvolves: "Aromatisse",
+		itemUser: ["Aromatisse"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -6,
+		gen: 6,
+		isNonstandard: "Past",
+	},
 };
