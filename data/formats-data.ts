@@ -176,6 +176,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	pichuakuurian: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	pikachu: {
 		randomBattleMoves: ["irontail", "knockoff", "surf", "voltswitch", "volttackle"],
 		randomBattleLevel: 92,
