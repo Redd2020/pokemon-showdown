@@ -1741,4 +1741,9 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "If Sunny Day or Sandstorm is active and this Pokemon is not holding Utility Umbrella, this Pokemon's Speed is doubled. If Drizzle is active, and this Pokemon is not holding Utility Umbrella, this Pokemon's Speed is halved.",
 		shortDesc: "If Sunny Day or Sandstorm is active, Speed is doubled. If Drizzle is, Speed is halved.",
 	},
+	heavyhooves: {
+		name: "Heavy Hooves",
+		desc: "This Pokemon's kick-based attacks have their power multiplied by 1.2.",
+		shortDesc: "This Pokemon's kick-based attacks have 1.2x power.",
+	},
 };
