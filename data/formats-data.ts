@@ -1268,6 +1268,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "NUBL",
 		doublesTier: "(DUU)",
 	},
+	porygonzmega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	omanyte: {
 		tier: "LC",
 	},
