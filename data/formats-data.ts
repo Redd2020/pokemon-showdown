@@ -5768,6 +5768,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "AG",
 		doublesTier: "(DUber)",
 	},
+	toxtricitymega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	sizzlipede: {
 		tier: "LC",
 	},
