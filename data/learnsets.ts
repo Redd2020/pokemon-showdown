@@ -50498,6 +50498,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			toxic: ["7M", "6M", "5M"],
 			voltswitch: ["7M", "6M", "5M"],
 			wildcharge: ["7M", "7L47", "6M", "6L47", "5M", "5L47"],
+			highjumpkick: ["7M", "6M"],
 		},
 	},
 	roggenrola: {

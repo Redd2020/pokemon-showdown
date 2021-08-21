@@ -5545,7 +5545,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Medicham",
 		types: ["Fighting", "Psychic"],
 		baseStats: {hp: 60, atk: 60, def: 75, spa: 60, spd: 75, spe: 80},
-		abilities: {0: "Pure Power", H: "Telepathy"},
+		abilities: {0: "Heavy Hooves", H: "Telepathy"},
 		heightm: 1.3,
 		weightkg: 31.5,
 		color: "Red",
