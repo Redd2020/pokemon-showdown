@@ -53332,6 +53332,11 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 5, level: 50, gender: "M", nature: "Brave", abilities: ["moxie"], moves: ["firepunch", "payback", "drainpunch", "substitute"], pokeball: "cherishball"},
 		],
 	},
+	scraftyethereal: {
+		learnset: {
+			
+		},
+	},
 	sigilyph: {
 		learnset: {
 			aerialace: ["7M", "6M", "5M"],
