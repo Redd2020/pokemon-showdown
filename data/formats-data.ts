@@ -3658,6 +3658,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "PU",
 		doublesTier: "DUU",
 	},
+	scraftyethereal: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	sigilyph: {
 		randomBattleMoves: ["airslash", "defog", "energyball", "heatwave", "psychic"],
 		randomBattleLevel: 82,
