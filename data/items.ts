@@ -7202,4 +7202,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
+	poryzite: {
+		name: "Poryzite",
+		spritenum: 589,
+		megaStone: "Porygon-Z-Mega",
+		megaEvolves: "Porygon-Z",
+		itemUser: ["Porygon-Z"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -9,
+		gen: 6,
+		isNonstandard: "Past",
+	},
 };

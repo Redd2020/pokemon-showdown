@@ -4564,13 +4564,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: -7,
 	},
-	expertise: {
+	databreach: {
 		onModifyDamage(damage, source, target, move) {
 			if (move && target.getMoveHitData(move).typeMod > 0) {
 				return this.chainModify([4915, 4096]);
 			}
 		},
-		name: "Expertise",
+		name: "Data Breach",
 		rating: 3,
 		num: -8,
 	},
