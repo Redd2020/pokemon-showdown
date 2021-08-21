@@ -2360,4 +2360,8 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Chatotite",
 		desc: "If held by a Chatot, this item allows it to Mega Evolve in battle.",
 	},
+	ludicolonite: {
+		name: "Ludicolonite",
+		desc: "If held by a Ludicolo, this item allows it to Mega Evolve in battle.",
+	},
 };

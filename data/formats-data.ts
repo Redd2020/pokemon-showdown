@@ -2031,6 +2031,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "(PU)",
 		doublesTier: "(DUU)",
 	},
+	ludicolomega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	seedot: {
 		tier: "LC",
 	},

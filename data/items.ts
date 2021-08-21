@@ -7188,4 +7188,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
+	ludicolonite: {
+		name: "Ludicolonite",
+		spritenum: 579,
+		megaStone: "Ludicolo-Mega",
+		megaEvolves: "Ludicolo",
+		itemUser: ["Ludicolo"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -8,
+		gen: 6,
+		isNonstandard: "Past",
+	},
 };
