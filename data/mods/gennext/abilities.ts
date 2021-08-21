@@ -51,6 +51,18 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		},
 		shortDesc: "If Sunny Day or Sandstorm is active, this Pokemon's Speed is multiplied by 1.5. If Drizzle is active, this Pokemon's Speed is multiplied by 0.5",
 	},
+	duckduckdance: {
+		inherit: true,
+		onModifySpe(spe) {
+			if (this.field.isWeather(['sunnyday', 'desolateland'])) {
+				return this.chainModify(1.5);
+			}
+			if (this.field.isWeather(['raindance', 'primordialsea'])) {
+				return this.chainModify(1.5);
+			}
+		},
+		shortDesc: "If Sunny Day or Drizzle is active, this Pokemon's Speed is multiplied by 1.5.",
+	},
 	forecast: {
 		inherit: true,
 		onModifyMove(move) {
