@@ -4546,6 +4546,19 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(2);
 			}
 		
+		
+		},
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, pokemon) {
+			if (['hail'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(0.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, pokemon) {
+			if (['hail'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(0.5);
+			}
 		},
 		name: "Duck, Duck, Dance!",
 		rating: 3,

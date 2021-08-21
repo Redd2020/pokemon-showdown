@@ -1743,8 +1743,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	duckduckdance: {
 		name: "Duck, Duck, Dance!",
-		desc: "If Sunny Day or Drizzle is active and this Pokemon is not holding Utility Umbrella, this Pokemon's Speed is doubled.",
-		shortDesc: "If Sunny Day or Drizzle is active, Speed is doubled.",
+		desc: "If Sunny Day or Drizzle is active and this Pokemon is not holding Utility Umbrella, this Pokemon's Speed is doubled. If Sunny Hail is active and this Pokemon is not holding Utility Umbrella, this Pokemon's Attack and Special Attack are halved.",
+		shortDesc: "Speed doubled in Sunny Day or Drizzle. Attack and Special Attack halved in Hail.",
 	},
 	heavyhooves: {
 		name: "Heavy Hooves",
