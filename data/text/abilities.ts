@@ -1746,4 +1746,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon's kick-based attacks have their power multiplied by 1.2.",
 		shortDesc: "This Pokemon's kick-based attacks have 1.2x power.",
 	},
+	miasma: {
+		name: "Miasma",
+		desc: "This Pokemon's Normal-type moves become Poison-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Poison type and have 1.2x power.",
+		
+	},
 };

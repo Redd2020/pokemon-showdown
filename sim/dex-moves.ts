@@ -301,6 +301,7 @@ export interface ActiveMove extends MutableMove {
 	negateSecondary?: boolean;
 	normalizeBoosted?: boolean;
 	pixilateBoosted?: boolean;
+	miasmaBoosted?: boolean;
 	pranksterBoosted?: boolean;
 	refrigerateBoosted?: boolean;
 	selfDropped?: boolean;

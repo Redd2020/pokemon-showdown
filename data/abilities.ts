@@ -4518,4 +4518,23 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: -5,
 	},
+	miasma: {
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.type === 'Normal' && !noModifyType.includes(move.id) && !(move.isZ && move.category !== 'Status')) {
+				move.type = 'Poison';
+				move.miasmaBoosted = true;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.miasmaBoosted) return this.chainModify([4915, 4096]);
+		},
+		name: "Miasma",
+		rating: 4,
+		num: -6,
+	},
 };
