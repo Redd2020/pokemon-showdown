@@ -3409,6 +3409,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	zebstrikamega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	roggenrola: {
 		tier: "LC",
 	},
