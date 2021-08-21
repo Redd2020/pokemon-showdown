@@ -63105,6 +63105,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			torment: ["7M", "6M"],
 			toxic: ["7M", "6M"],
 			trickroom: ["8M", "7M", "6M", "6S0"],
+			hypervoice: ["8T", "7T", "6T"],
 		},
 		eventData: [
 			{generation: 6, level: 50, nature: "Relaxed", isHidden: true, moves: ["trickroom", "healpulse", "disable", "moonblast"], pokeball: "cherishball"},
