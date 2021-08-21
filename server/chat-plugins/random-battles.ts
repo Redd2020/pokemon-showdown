@@ -308,6 +308,7 @@ function generateSSBMoveInfo(sigMove: Move, dex: ModdedDex) {
 		if (sigMove.flags['defrost']) details["&#10003; Thaws user"] = "";
 		if (sigMove.flags['bite']) details["&#10003; Bite"] = "";
 		if (sigMove.flags['punch']) details["&#10003; Punch"] = "";
+		if (sigMove.flags['kick']) details["&#10003; Kick"] = "";
 		if (sigMove.flags['powder']) details["&#10003; Powder"] = "";
 		if (sigMove.flags['reflectable']) details["&#10003; Bounceable"] = "";
 		if (sigMove.flags['charge']) details["&#10003; Two-turn move"] = "";
