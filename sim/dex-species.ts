@@ -283,7 +283,7 @@ export class Species extends BasicEffect implements Readonly<BasicEffect & Speci
 		if (Array.isArray(data.changesFrom)) this.changesFrom = data.changesFrom[0];
 
 		if (!this.gen && this.num >= 1) {
-			if (this.num >= 810 || ['Gmax', 'Galar', 'Galar-Zen'].includes(this.forme)) {
+			if (this.num >= 810 || ['Gmax', 'Galar', 'Galar-Zen', 'Ethereal', 'Akuurian'].includes(this.forme)) {
 				this.gen = 8;
 			} else if (this.num >= 722 || this.forme.startsWith('Alola') || this.forme === 'Starter') {
 				this.gen = 7;
@@ -399,6 +399,8 @@ export class DexSpecies {
 				galar: ['g', 'galar', 'galarian'],
 				mega: ['m', 'mega'],
 				primal: ['p', 'primal'],
+				ethereal: ['e', 'ethereal', 'ethereal'],
+				akuurian: ['ak', 'akuurian', 'akuurian'],
 			};
 			for (const forme in formeNames) {
 				let pokeName = '';
