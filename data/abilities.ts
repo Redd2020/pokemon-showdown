@@ -4510,7 +4510,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onBasePowerPriority: 23,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['kick']) {
-				this.debug('Iron Fist boost');
+				this.debug('Heavy Hooves boost');
 				return this.chainModify([4915, 4096]);
 			}
 		},
