@@ -7216,4 +7216,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
+	luxranite: {
+		name: "Luxranite",
+		spritenum: 628,
+		megaStone: "Luxray-Mega",
+		megaEvolves: "Luxray",
+		itemUser: ["Luxray"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -10,
+		gen: 6,
+		isNonstandard: "Past",
+	},
 };

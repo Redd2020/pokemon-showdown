@@ -2837,6 +2837,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "(PU)",
 		doublesTier: "(DUU)",
 	},
+	luxraymega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	cranidos: {
 		isNonstandard: "Past",
 		tier: "Illegal",

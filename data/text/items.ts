@@ -2368,4 +2368,8 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Poryzite",
 		desc: "If held by a Porygon-Z, this item allows it to Mega Evolve in battle.",
 	},
+	luxranite: {
+		name: "Luxranite",
+		desc: "If held by a Luxray, this item allows it to Mega Evolve in battle.",
+	},
 };
