@@ -4329,6 +4329,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "NU",
 		doublesTier: "(DUU)",
 	},
+	talonflamemega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	scatterbug: {
 		isNonstandard: "Past",
 		tier: "Illegal",

@@ -7230,4 +7230,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
+	talonflamite: {
+		name: "Talonflamite",
+		spritenum: 580,
+		megaStone: "Talonflame-Mega",
+		megaEvolves: "Talonflame",
+		itemUser: ["Talonflame"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -11,
+		gen: 6,
+		isNonstandard: "Past",
+	},
 };
