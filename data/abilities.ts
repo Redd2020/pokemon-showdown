@@ -4574,4 +4574,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: -8,
 	},
+	temporalmight: {
+		onModifySpAPriority: 5,
+		onModifySpA(atk) {
+			return this.chainModify(2);
+		},
+		name: "Temporal Might",
+		rating: 5,
+		num: -9,
+	},
 };

@@ -1763,4 +1763,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		shortDesc: "This Pokemon's attacks that are super effective against the target do 1.2x damage.",
 		
 	},
+	temporalmight: {
+		name: "Temporal Might",
+		shortDesc: "This Pokemon's Special Attack is doubled.",
+	},
 };
