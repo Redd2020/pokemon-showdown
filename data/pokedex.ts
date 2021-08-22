@@ -11523,7 +11523,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	talonflamemega: {
 		num: 663,
 		name: "Talonflame-Mega",
-		baseSpecies: "Talmonflame",
+		baseSpecies: "Talonflame",
 		forme: "Mega",
 		types: ["Fire", "Flying"],
 		baseStats: {hp: 78, atk:141 , def: 91, spa: 84, spd: 104, spe: 126},
