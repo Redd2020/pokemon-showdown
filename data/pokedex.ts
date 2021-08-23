@@ -3423,7 +3423,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Crobat",
 		types: ["Poison", "Flying"],
 		baseStats: {hp: 85, atk: 90, def: 80, spa: 70, spd: 80, spe: 130},
-		abilities: {0: "Life Steal", H: "Infiltrator"},
+		abilities: {0: "Inner Focus", H: "Infiltrator"},
 		heightm: 1.8,
 		weightkg: 75,
 		color: "Purple",
