@@ -4583,4 +4583,18 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 5,
 		num: -9,
 	},
+	lifesteal: {
+		// upokecenter says this is implemented as an added secondary effect
+		onModifyMove(move, pokemon) {
+			if (!move?.flags['contact'] || move.target === 'self') {
+			pokemon.heal(pokemon.baseMaxhp / 3)
+			
+			}
+			return;
+			
+		},
+		name: "Life Steal",
+		rating: 2,
+		num: -10,
+	},
 };
