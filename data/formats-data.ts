@@ -1596,6 +1596,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	ambipomethereal: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	sunkern: {
 		isNonstandard: "Past",
 		tier: "Illegal",
