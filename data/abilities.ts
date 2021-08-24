@@ -4591,11 +4591,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2,
 		num: -10,
 	},
-	volcanicrage: {
+	moltenrage: {
 		onModifyPriority(priority, pokemon, target, move) {
 			if (move?.flags['erupt']) return priority + 1;
 		},
-		name: "Volcanic Rage",
+		name: "Molten Rage",
 		rating: 3.5,
 		num: -11,
 	},

@@ -1766,8 +1766,13 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	temporalmight: {
 		name: "Temporal Might",
 		shortDesc: "This Pokemon's Special Attack is doubled.",
-	},lifesteal: {
+	},
+	lifesteal: {
 		name: "Life Steal",
 		shortDesc: "This Pokemon's contact moves heal 1/16 of its max HP",
+	},
+	moltenrage: {
+		name: "Molten Rage",
+		shortDesc: "This Pokemon has a +1 priority on Eruption.",
 	},
 };

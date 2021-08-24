@@ -1451,6 +1451,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	typhlosionmega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	totodile: {
 		isNonstandard: "Past",
 		tier: "Illegal",

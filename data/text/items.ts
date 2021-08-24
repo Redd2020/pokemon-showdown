@@ -2376,4 +2376,8 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Talonite",
 		desc: "If held by a Talonflame, this item allows it to Mega Evolve in battle.",
 	},
+	typhlosionite: {
+		name: "Typhlosionite",
+		desc: "If held by a Typhlosion, this item allows it to Mega Evolve in battle.",
+	},
 };
