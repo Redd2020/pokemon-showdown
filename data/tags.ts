@@ -82,6 +82,11 @@ export const Tags: {[id: string]: TagData} = {
 		desc: "Boosted 1.2x by Heavy Hooves.",
 		moveFilter: move => 'kick' in move.flags,
 	},
+	erupt: {
+		name: "Erupt",
+		desc: "Describes move Eruption",
+		moveFilter: move => 'erupt' in move.flags,
+	},
 	pulse: {
 		name: "Pulse",
 		desc: "Boosted 1.5x by Mega Launcher.",

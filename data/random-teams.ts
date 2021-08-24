@@ -673,6 +673,7 @@ export class RandomTeams {
 
 				if (move.flags['bite']) counter.add('strongjaw');
 				if (move.flags['punch']) counter.add('ironfist');
+				if (move.flags['erupt']) counter.add('volcanicrage');
 				if (move.flags['kick']) counter.add('heavyhooves');
 				if (move.flags['sound']) counter.add('sound');
 				if (move.priority !== 0 || (moveid === 'grassyglide' && abilities.has('Grassy Surge'))) {
