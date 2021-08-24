@@ -376,8 +376,16 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	zubat: {
 		tier: "LC",
 	},
+	zubatethereal: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	golbat: {
 		tier: "NFE",
+	},
+	golbatethereal: {
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 	crobat: {
 		randomBattleMoves: ["bravebird", "defog", "roost", "superfang", "taunt", "toxic", "uturn"],
@@ -386,6 +394,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomDoubleBattleLevel: 86,
 		tier: "RU",
 		doublesTier: "(DUU)",
+	},
+	crobatethereal: {
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 	oddish: {
 		tier: "LC",
