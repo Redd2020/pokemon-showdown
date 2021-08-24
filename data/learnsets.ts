@@ -28947,7 +28947,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			moonblast:["8M"],
 			moonlight:["8M"],
 			playrough:["8M"],
-			addurance:["8M"],
+			assurance:["8M"],
 			beatup:["8M"],
 			darkpulse:["8M"],
 			gunkshot:["8M"],
@@ -28956,7 +28956,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			trick:["8M"],
 			taunt:["8M"],
 			torment:["8M"],
-			
+
 
 
 
