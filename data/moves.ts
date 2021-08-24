@@ -4440,7 +4440,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Eruption",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, erupt:1},
 		secondary: null,
 		target: "allAdjacentFoes",
 		type: "Fire",
