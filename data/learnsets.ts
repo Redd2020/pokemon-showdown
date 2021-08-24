@@ -28853,6 +28853,12 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 3, level: 10, gender: "M", abilities: ["intimidate"], moves: ["tackle", "leer"], pokeball: "pokeball"},
 		],
 	},
+	stantlerethereal: {
+		learnset: {
+		
+		},
+		
+	},
 	smeargle: {
 		learnset: {
 			captivate: ["5D"],

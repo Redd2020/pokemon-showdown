@@ -7258,4 +7258,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
+	estantlerite: {
+		name: "E. Stantlerite",
+		spritenum: 601,
+		megaStone: "Stantler-Ethereal-Mega",
+		megaEvolves: "Stantler-Ethereal",
+		itemUser: ["Stantler-Ethereal"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -13,
+		gen: 6,
+		isNonstandard: "Past",
+	},
 };

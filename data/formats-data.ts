@@ -1855,6 +1855,14 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	stantlerethereal: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
+	stantleretherealmega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	smeargle: {
 		isNonstandard: "Past",
 		tier: "Illegal",
