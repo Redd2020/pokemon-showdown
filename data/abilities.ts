@@ -4585,7 +4585,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	lifesteal: {
 		onFoeDamagingHit(damage, target, source, move) {
-            if (source && source !== target && move?.flags['contact']) this.heal(source.baseMaxhp / 16, source);
+			if (source && source !== target && move?.flags['contact']) this.heal(source.baseMaxhp / 16, source);
 		},
 		name: "Life Steal",
 		rating: 2,
