@@ -1754,14 +1754,12 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	miasma: {
 		name: "Miasma",
 		desc: "This Pokemon's Normal-type moves become Poison-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
-		shortDesc: "This Pokemon's Normal-type moves become Poison type and have 1.2x power.",
-		
+		shortDesc: "This Pokemon's Normal-type moves become Poison type and have 1.2x power.",	
 	},
 	databreach: {
 		name: "Data Breach",
 		desc: "This Pokemon's attacks that are super effective against the target do 1.2x damage.",
-		shortDesc: "This Pokemon's attacks that are super effective against the target do 1.2x damage.",
-		
+		shortDesc: "This Pokemon's attacks that are super effective against the target do 1.2x damage.",	
 	},
 	temporalmight: {
 		name: "Temporal Might",

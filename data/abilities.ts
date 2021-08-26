@@ -31,7 +31,6 @@ Ratings and how they work:
 	ex. Imposter, Shadow Tag
 
 */
-
 export const Abilities: {[abilityid: string]: AbilityData} = {
 	noability: {
 		isNonstandard: "Past",
