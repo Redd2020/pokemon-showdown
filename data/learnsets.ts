@@ -5996,7 +5996,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			shadowball: ["8M"],
 			screech: ["8M"],
 			superfang: ["8M"],
-			toxicspikes: ["8M"],	
+			toxicspikes: ["8M"],
 		},
 	},
 	crobat: {
@@ -6142,7 +6142,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			uturn: ["8M"],
 			venomdrench: ["8M"],
 			venoshock: ["8M"],
-			roar: ["8M"], 
+			roar: ["8M"],
 			wingattack: ["8M"],
 			zenheadbutt: ["8M"],
 			ancientpower: ["8M"],
@@ -24970,7 +24970,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			forcepalm: ["8M"],
 			coaching: ["8M"],
 			circlethrow: ["8M"],
-			machpunch: ["8M"], 
+			machpunch: ["8M"],
 			matblock: ["8M"],
 			stormthrow: ["8M"],
 			submission: ["8M"],
@@ -28945,7 +28945,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			trick: ["8M"],
 			taunt: ["8M"],
 			torment: ["8M"],
-		},	
+		},
 	},
 	smeargle: {
 		learnset: {
@@ -53927,8 +53927,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			watergun: ["8M"],
 			whirlpool: ["8M"],
 			anchorshot: ["8M"],
-
-	
 		},
 	},
 	sigilyph: {

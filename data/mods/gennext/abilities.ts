@@ -32,7 +32,6 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 			if (this.field.isWeather('hail')) {
 				return this.chainModify(1.5);
 			}
-			
 		},
 		shortDesc: "If Hail is active, this Pokemon's Speed is multiplied by 1.5.",
 	},
