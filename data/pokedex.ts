@@ -1101,6 +1101,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Purple",
 		evos: ["Golbat"],
 		eggGroups: ["Flying"],
+		otherFormes: ["Zubat-Ethereal"],
 	},
 	zubatethereal: {
 		num: 41,
@@ -1115,6 +1116,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Purple",
 		evos: ["Golbat-Ethereal"],
 		eggGroups: ["Flying"],
+		
 	},
 	golbat: {
 		num: 42,
@@ -1129,6 +1131,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoLevel: 22,
 		evos: ["Crobat"],
 		eggGroups: ["Flying"],
+		otherFormes: ["Golbat-Ethereal"],
 	},
 	golbatethereal: {
 		num: 42,
@@ -3474,6 +3477,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Golbat",
 		evoType: "levelFriendship",
 		eggGroups: ["Flying"],
+		otherFormes: ["Crobat-Ethereal"],
 	},
 	crobatethereal: {
 		num: 169,
@@ -4488,6 +4492,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 71.2,
 		color: "Brown",
 		eggGroups: ["Field"],
+		otherFormes: ["Stantler-Ethereal"],
 	},
 	stantlerethereal: {
 		num: 234,
@@ -7572,6 +7577,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evoType: "levelMove",
 		evoMove: "Double Hit",
 		eggGroups: ["Field"],
+		otherFormes: ["Ambipom-Ethereal"],
 	},
 	ambipomethereal: {
 		num: 424,
@@ -10010,6 +10016,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Scraggy",
 		evoLevel: 39,
 		eggGroups: ["Field", "Dragon"],
+		otherFormes: ["Scrafty-Ethereal"],
 	},
 	scraftyethereal: {
 		num: 560,
