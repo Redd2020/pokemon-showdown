@@ -4497,7 +4497,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
 				return this.chainModify(0.5);
 			}
-		
 		},
 		onImmunity(type, pokemon) {
 			if (type === 'sandstorm') return false;
@@ -4545,8 +4544,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
 				return this.chainModify(2);
 			}
-		
-		
 		},
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, pokemon) {
