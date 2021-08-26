@@ -5810,7 +5810,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			uturn: ["8M"],
 			venomdrench: ["8M"],
 			venoshock: ["8M"],
-			roar: ["8M"], 
+			roar: ["8M"],
 			wingattack: ["8M"],
 			zenheadbutt: ["8M"],
 			ancientpower: ["8M"],
@@ -5824,9 +5824,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			stealthrock: ["8M"],
 			suckerpunch: ["8M"],
 			wideguard: ["8M"],
-
-			
-
 		},
 	},
 	golbat: {
@@ -5977,7 +5974,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			uturn: ["8M"],
 			venomdrench: ["8M"],
 			venoshock: ["8M"],
-			roar: ["8M"], 
+			roar: ["8M"],
 			wingattack: ["8M"],
 			zenheadbutt: ["8M"],
 			ancientpower: ["8M"],
