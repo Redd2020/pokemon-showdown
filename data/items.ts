@@ -7258,8 +7258,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
-	estantlerite: {
-		name: "E. Stantlerite",
+	etherealstantlerite: {
+		name: "Ethereal Stantlerite",
 		spritenum: 601,
 		megaStone: "Stantler-Ethereal-Mega",
 		megaEvolves: "Stantler-Ethereal",

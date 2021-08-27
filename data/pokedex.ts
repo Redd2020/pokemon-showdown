@@ -4518,7 +4518,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 91.2,
 		color: "Purple",
 		eggGroups: ["Field"],
-		requiredItem: "E. Stantlerite",
+		requiredItem: "Ethereal Stantlerite",
 	},
 	smeargle: {
 		num: 235,
