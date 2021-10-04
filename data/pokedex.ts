@@ -4510,7 +4510,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 234,
 		name: "Stantler-Ethereal-Mega",
 		baseSpecies: "Stantler-Ethereal",
-		forme: "Mega",
+		forme: "Ethereal, Mega",
 		types: ["Ghost", "Fairy"],
 		baseStats: {hp: 85, atk: 135, def: 80, spa: 65, spd: 115, spe: 85},
 		abilities: {0: "Tough Claws"},
