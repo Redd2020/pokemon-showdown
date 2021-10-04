@@ -1464,7 +1464,7 @@ export class RandomGen7Teams extends RandomTeams {
 				}
 				if (species.otherFormes && !hasMega && (
 					species.otherFormes.includes(species.name + '-Mega') ||
-					species.otherFormes.includes(species.name + '-Mega-X')
+					species.otherFormes.includes(species.name + '-Mega-X') 
 				)) {
 					continue;
 				}
