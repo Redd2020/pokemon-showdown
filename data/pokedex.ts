@@ -4491,7 +4491,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 71.2,
 		color: "Brown",
 		eggGroups: ["Field"],
-		otherFormes: ["Stantler-Ethereal"],
+		otherFormes: ["Stantler-Ethereal", "Stantler-Ethereal-Mega"],
+		formeOrder: ["Stantler", "Stantler-Ethereal", "Stantler-Ethereal-Mega"],
 	},
 	stantlerethereal: {
 		num: 234,
