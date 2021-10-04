@@ -1746,6 +1746,9 @@ export class BattleActions {
 		const species = pokemon.baseSpecies;
 		const altForme = species.otherFormes && this.dex.species.get(species.otherFormes[0]);
 		const item = pokemon.getItem();
+		if (item.name === "Ethereal Stantlerite" && pokemon.baseSpecies.name === "Stantler-Ethereal") {
+			return "Stantler-Ethereal-Mega";
+		}
 		// Mega Rayquaza
 		if ((this.battle.gen <= 7 || this.battle.ruleTable.has('standardnatdex')) &&
 			altForme?.isMega && altForme?.requiredMove &&
