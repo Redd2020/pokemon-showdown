@@ -12034,7 +12034,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Fairy"],
 	},
 	aromatissemega: {
-		num: 523,
+		num: 683,
 		name: "Aromatisse-Mega",
 		baseSpecies: "Aromatisse",
 		forme: "Mega",
