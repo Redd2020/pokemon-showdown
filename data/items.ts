@@ -7230,8 +7230,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
-	talonite: {
-		name: "Talonite",
+	talonflamite: {
+		name: "Talonflamite",
 		spritenum: 580,
 		megaStone: "Talonflame-Mega",
 		megaEvolves: "Talonflame",
