@@ -3255,10 +3255,10 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	meganium: {
 		num: 154,
 		name: "Meganium",
-		types: ["Grass"],
+		types: ["Grass", "Fairy"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 80, atk: 82, def: 100, spa: 83, spd: 100, spe: 80},
-		abilities: {0: "Overgrow", H: "Leaf Guard"},
+		abilities: {0: "Overgrow", H: "Regenerator"},
 		heightm: 1.8,
 		weightkg: 100.5,
 		color: "Green",
