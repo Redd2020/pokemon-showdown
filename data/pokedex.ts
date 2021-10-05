@@ -3313,7 +3313,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Typhlosion-Mega",
 		baseSpecies: "Typhlosion",
 		forme: "Mega",
-		types: ["Fire"],
+		types: ["Fire", "Ground"],
 		baseStats: {hp: 78, atk: 104, def: 88, spa: 149, spd: 95, spe: 120},
 		abilities: {0: "Molten Rage"},
 		heightm: 1.7,
