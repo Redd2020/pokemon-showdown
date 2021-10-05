@@ -22094,6 +22094,8 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			wildcharge: ["7M", "6M", "5M"],
 			willowisp: ["7M", "6M", "5M", "4M"],
 			workup: ["7M"],
+			earthpower: ["8T"],
+			scorchingsands: ["8T"],
 		},
 		eventData: [
 			{generation: 3, level: 70, moves: ["quickattack", "flamewheel", "swift", "flamethrower"], pokeball: "pokeball"},
