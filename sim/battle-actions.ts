@@ -1749,6 +1749,9 @@ export class BattleActions {
 		if (item.name === "Ethereal Stantlerite" && pokemon.baseSpecies.name === "Stantler-Ethereal") {
 			return "Stantler-Ethereal-Mega";
 		}
+		if (item.name === "Ethereal Dragonitenite" && pokemon.baseSpecies.name === "Dragonite-Ethereal") {
+			return "Dragonite-Ethereal-Mega";
+		}
 		// Mega Rayquaza
 		if ((this.battle.gen <= 7 || this.battle.ruleTable.has('standardnatdex')) &&
 			altForme?.isMega && altForme?.requiredMove &&
