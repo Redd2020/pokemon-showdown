@@ -1467,6 +1467,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	feraligatrmega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	sentret: {
 		isNonstandard: "Past",
 		tier: "Illegal",

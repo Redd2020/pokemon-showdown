@@ -2384,4 +2384,8 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Ethereal Stantlerite",
 		desc: "If held by a Stantler-Ethereal, this item allows it to Mega Evolve in battle.",
 	},
+	feraligatite: {
+		name: "Feraligatite",
+		desc: "If held by a Feraligatr, this item allows it to Mega Evolve in battle.",
+	},
 };
