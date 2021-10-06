@@ -2388,4 +2388,8 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Feraligatite",
 		desc: "If held by a Feraligatr, this item allows it to Mega Evolve in battle.",
 	},
+	meganiumite: {
+		name: "Meganiumite",
+		desc: "If held by a Meganium, this item allows it to Mega Evolve in battle.",
+	},
 };

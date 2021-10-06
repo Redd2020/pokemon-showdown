@@ -1439,6 +1439,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	meganiummega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	cyndaquil: {
 		isNonstandard: "Past",
 		tier: "Illegal",
