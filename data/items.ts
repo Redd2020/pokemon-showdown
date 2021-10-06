@@ -7300,4 +7300,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
+	cofagrigusite: {
+		name: "Cofagrigusite",
+		spritenum: 628,
+		megaStone: "Cofagrigus-Mega",
+		megaEvolves: "Cofagrigus",
+		itemUser: ["Cofagrigus"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -16,
+		gen: 6,
+		isNonstandard: "Past",
+	},
 };
