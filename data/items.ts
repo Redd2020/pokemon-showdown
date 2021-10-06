@@ -7328,4 +7328,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: -17,
 		isNonstandard: "Past",
 	},
+	etherealdragonitenite: {
+		name: "Ethereal Dragonitenite",
+		spritenum: 618,
+		megaStone: "Dragonite-Ethereal-Mega",
+		megaEvolves: "Dragonite-Ethereal",
+		itemUser: ["Dragonite-Ethereal"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 758,
+		gen: -18,
+		isNonstandard: "Past",
+	},
 };
