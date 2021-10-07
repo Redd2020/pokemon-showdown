@@ -1773,4 +1773,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Molten Rage",
 		shortDesc: "This Pokemon has a +1 priority on Eruption.",
 	},
+	acidrain: {
+		name: "Acid Rain",
+		shortDesc: "This Pokemon's water type moves have a 20% chance to Poison the target.",
+	},
 };

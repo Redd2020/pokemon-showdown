@@ -10576,7 +10576,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Jellicent",
 		types: ["Water", "Ghost"],
 		baseStats: {hp: 100, atk: 60, def: 70, spa: 85, spd: 105, spe: 60},
-		abilities: {0: "Water Absorb", 1: "Cursed Body", H: "Damp"},
+		abilities: {0: "Water Absorb", 1: "Cursed Body", H: "Acid Rain"},
 		heightm: 2.2,
 		weightkg: 135,
 		color: "White",
