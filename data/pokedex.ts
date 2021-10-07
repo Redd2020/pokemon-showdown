@@ -3192,7 +3192,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Aerilate"},
 		heightm: 2.2,
 		weightkg: 210,
-		color: "Brown",
+		color: "Purple",
 		eggGroups: ["Water 1", "Dragon"],
 		requiredItem: "Dragonitenite",
 	},
