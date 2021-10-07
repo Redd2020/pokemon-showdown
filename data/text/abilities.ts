@@ -1775,6 +1775,6 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	pollution: {
 		name: "Pollution",
-		shortDesc: "This Pokemon's water type moves have a 20% chance to Poison the target.",
+		shortDesc: "This Pokemon's Water-type moves have a 20% chance to Poison the target.",
 	},
 };
