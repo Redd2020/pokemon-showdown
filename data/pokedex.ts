@@ -3200,7 +3200,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 149,
 		name: "Dragonite-Ethereal-Mega",
 		baseSpecies: "Dragonite-Ethereal",
-		forme: "Dragonite-Mega",
+		forme: "Ethereal-Mega",
 		types: ["Dragon", "Electric"],
 		baseStats: {hp: 81, atk: 144, def: 80, spa: 120, spd: 90, spe: 185},
 		abilities: {0: "Motor Drive"},
