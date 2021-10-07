@@ -10591,7 +10591,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		forme: "Mega",
 		types: ["Water", "Ghost"],
 		baseStats: {hp: 100, atk: 80, def: 100, spa: 95, spd: 135, spe: 70},
-		abilities: {0: "Acid Rain"},
+		abilities: {0: "Pollution"},
 		heightm: 2.2,
 		weightkg: 135,
 		color: "White",
