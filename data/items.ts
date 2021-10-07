@@ -7342,4 +7342,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: -18,
 		isNonstandard: "Past",
 	},
+	jellicentite: {
+		name: "Jellicent",
+		spritenum: 630,
+		megaStone: "Jellicent-Mega",
+		megaEvolves: "Jellicent",
+		itemUser: ["Jellicent"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 758,
+		gen: -19,
+		isNonstandard: "Past",
+	},
 };

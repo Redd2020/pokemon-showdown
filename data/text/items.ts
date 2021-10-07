@@ -2404,4 +2404,8 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Ethereal Dragonitenite",
 		desc: "If held by a Dragonite-Ethereal, this item allows it to Mega Evolve in battle.",
 	},
+	jellicentite: {
+		name: "Jellicentite",
+		desc: "If held by a Jellicent, this item allows it to Mega Evolve in battle.",
+	},
 };

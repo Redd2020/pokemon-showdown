@@ -3909,6 +3909,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "(PU)",
 		doublesTier: "(DUU)",
 	},
+	jellicentmega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	alomomola: {
 		isNonstandard: "Past",
 		tier: "Illegal",

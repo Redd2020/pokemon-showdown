@@ -4595,7 +4595,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: -11,
 	},
-	acidrain: {
+	pollution: {
 		// upokecenter says this is implemented as an added secondary effect
 		onModifyMove(move) {
 			if (move.type === 'Electric' || move.target === 'self') return;
@@ -4603,12 +4603,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				move.secondaries = [];
 			}
 			move.secondaries.push({
-				chance: 100,
+				chance: 20,
 				status: 'psn',
-				ability: this.dex.abilities.get('acidrain'),
+				ability: this.dex.abilities.get('pollution'),
 			});
 		},
-		name: "Acid Rain",
+		name: "Pollution",
 		rating: 2,
 		num: -12,
 	},
