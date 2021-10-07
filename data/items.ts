@@ -7343,7 +7343,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		isNonstandard: "Past",
 	},
 	jellicentite: {
-		name: "Jellicent",
+		name: "Jellicentite",
 		spritenum: 630,
 		megaStone: "Jellicent-Mega",
 		megaEvolves: "Jellicent",
