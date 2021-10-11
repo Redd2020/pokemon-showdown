@@ -3176,7 +3176,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		abilities: {0: "Inner Focus", H: "Mold Breaker"},
 		heightm: 7.5,
 		weightkg: 160,
-		color: "Purple",
+		color: "Yellow",
 		prevo: "Dragonair",
 		evoType: "useItem",
 		evoItem: "Thunder Stone",
