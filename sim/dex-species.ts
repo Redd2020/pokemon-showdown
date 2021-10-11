@@ -399,7 +399,7 @@ export class DexSpecies {
 				galar: ['g', 'galar', 'galarian'],
 				mega: ['m', 'mega'],
 				primal: ['p', 'primal'],
-				ethereal: ['e', 'ethereal', 'ethereal'],
+				ethereal: ['eth', 'ethereal', 'ethereal'],
 				akuurian: ['ak', 'akuurian', 'akuurian'],
 			};
 			for (const forme in formeNames) {
