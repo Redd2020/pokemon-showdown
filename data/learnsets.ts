@@ -21190,7 +21190,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			megahorn: ["8M"],
 			hornattack: ["8M"],
 			nobleroar: ["8M"],
-			pyschicfangs: ["8M"],
+			psychicfangs: ["8M"],
 			speedswap: ["8M"],
 		},
 	},
