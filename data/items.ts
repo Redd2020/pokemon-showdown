@@ -7359,4 +7359,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: -19,
 		isNonstandard: "Past",
 	},
+	infernapite: {
+		name: "Infernapite",
+		spritenum: 625,
+		megaStone: "Infernape-Mega",
+		megaEvolves: "Infernape",
+		itemUser: ["Infernape"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 758,
+		gen: -20,
+		isNonstandard: "Past",
+	},
 };

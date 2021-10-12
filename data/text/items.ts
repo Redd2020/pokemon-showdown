@@ -2408,4 +2408,8 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Jellicentite",
 		desc: "If held by a Jellicent, this item allows it to Mega Evolve in battle.",
 	},
+	infernapite: {
+		name: "Infernapite",
+		desc: "If held by a Infernape, this item allows it to Mega Evolve in battle.",
+	},
 };

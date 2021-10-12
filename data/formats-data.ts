@@ -2831,6 +2831,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	infernapemega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	piplup: {
 		isNonstandard: "Past",
 		tier: "Illegal",
