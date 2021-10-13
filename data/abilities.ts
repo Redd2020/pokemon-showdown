@@ -4615,4 +4615,16 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2,
 		num: -12,
 	},
+	razorsharp: {
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['slice']) {
+				this.debug('Razor Sharp boost');
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		name: "Razor Sharp",
+		rating: 3,
+		num: -13,
+	},
 };

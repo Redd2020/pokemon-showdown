@@ -677,6 +677,7 @@ export class RandomTeams {
 				if (move.flags['punch']) counter.add('ironfist');
 				if (move.flags['erupt']) counter.add('moltenrage');
 				if (move.flags['kick']) counter.add('heavyhooves');
+				if (move.flags['slice']) counter.add('razorsharp');
 				if (move.flags['sound']) counter.add('sound');
 				if (move.priority !== 0 || (moveid === 'grassyglide' && abilities.has('Grassy Surge'))) {
 					counter.add('priority');
