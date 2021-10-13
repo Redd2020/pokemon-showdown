@@ -1777,4 +1777,9 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Pollution",
 		shortDesc: "This Pokemon's Water-type moves have a 20% chance to Poison the target.",
 	},
+	razorsharp: {
+		name: "Razor Sharp",
+		desc: "This Pokemon's slice-based attacks have their power multiplied by 1.2.",
+		shortDesc: "This Pokemon's slice-based attacks have 1.2x power.",
+	},
 };
