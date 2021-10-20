@@ -4087,7 +4087,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onBeforeMovePriority: 9,
 		onBeforeMove(pokemon) {
 			if (pokemon.removeVolatile('truant')) {
-				this.add('cant', pokemon, 'ability: Truant');
+				this.add('cant', pokemon, 'ability: Truant Two');
 				return false;
 			}
 			pokemon.addVolatile('truant');
@@ -4100,7 +4100,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			onBeforeMovePriority: 99,
 			onBeforeMove(pokemon, target, move) {
 				if (pokemon.removeVolatile('truant')) {
-					this.add('cant', pokemon, 'ability: Truant');
+					this.add('cant', pokemon, 'ability: Truant Two');
 					this.heal(pokemon.baseMaxhp / 3);
 					return false;
 				}
