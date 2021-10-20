@@ -4110,8 +4110,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: -1,
 		num: 54,
 	},
-		
-	
 	turboblaze: {
 		onStart(pokemon) {
 			this.add('-ability', pokemon, 'Turboblaze');
