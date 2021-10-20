@@ -4077,6 +4077,41 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: -1,
 		num: 54,
 	},
+	truanttwo: {
+		onStart(pokemon) {
+			pokemon.removeVolatile('truant');
+			if (pokemon.activeTurns && (pokemon.moveThisTurnResult !== undefined || !this.queue.willMove(pokemon))) {
+				pokemon.addVolatile('truant');
+			}
+		},
+		onBeforeMovePriority: 9,
+		onBeforeMove(pokemon) {
+			if (pokemon.removeVolatile('truant')) {
+				this.add('cant', pokemon, 'ability: Truant');
+				return false;
+			}
+			pokemon.addVolatile('truant');
+		},
+		condition: {
+			duration: 2,
+			onStart(pokemon) {
+				this.add('-start', pokemon, 'Truant');
+			},
+			onBeforeMovePriority: 99,
+			onBeforeMove(pokemon, target, move) {
+				if (pokemon.removeVolatile('truant')) {
+					this.add('cant', pokemon, 'ability: Truant');
+					this.heal(pokemon.baseMaxhp / 3);
+					return false;
+				}
+			},
+		},
+		name: "Truant Two",
+		rating: -1,
+		num: 54,
+	},
+		
+	
 	turboblaze: {
 		onStart(pokemon) {
 			this.add('-ability', pokemon, 'Turboblaze');

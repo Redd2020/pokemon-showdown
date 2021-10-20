@@ -5441,7 +5441,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Slaking",
 		types: ["Normal"],
 		baseStats: {hp: 150, atk: 160, def: 100, spa: 95, spd: 65, spe: 100},
-		abilities: {0: "Truant"},
+		abilities: {0: "Truant Two"},
 		heightm: 2,
 		weightkg: 130.5,
 		color: "Brown",
