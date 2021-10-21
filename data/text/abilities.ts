@@ -1782,4 +1782,9 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon's slice-based attacks have their power multiplied by 1.2.",
 		shortDesc: "This Pokemon's slice-based attacks have 1.2x power.",
 	},
+	bushidocode: {
+		name: "Bushido Code",
+		desc: "This Pokemon's Fighting-type attacks always critical hit.",
+		shortDesc: "This Pokemon's Fighting-type attacks always critical hit.",
+	},
 };
