@@ -4627,4 +4627,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: -13,
 	},
+	bushidocode: {
+		onModifyCritRatio(critRatio, source, target, move) {
+			if (move.type === 'Fighting') return 5;
+		},
+		name: "Bushido Code",
+		rating: 1.5,
+		num: -14,
+	},
 };
