@@ -75459,6 +75459,10 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			whirlpool: ["8M"],
 		},
 	},
+	cramorantethereal: {
+		learnset: {
+		},
+	},
 	arrokuda: {
 		learnset: {
 			acupressure: ["8E"],

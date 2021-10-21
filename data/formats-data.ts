@@ -5817,6 +5817,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "(PU)",
 		doublesTier: "(DUU)",
 	},
+	cramorantethereal: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	arrokuda: {
 		tier: "LC",
 	},
