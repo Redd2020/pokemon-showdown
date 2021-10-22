@@ -4663,7 +4663,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "False Swipe",
 		pp: 40,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, slice: 1},
 		onDamagePriority: -20,
 		onDamage(damage, target, source, effect) {
 			if (damage >= target.hp) return target.hp - 1;
@@ -13754,7 +13754,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Razor Shell",
 		pp: 10,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, slice: 1},
 		secondary: {
 			chance: 50,
 			boosts: {
@@ -14513,7 +14513,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Sacred Sword",
 		pp: 15,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, slice: 1},
 		ignoreEvasion: true,
 		ignoreDefensive: true,
 		secondary: null,
@@ -14856,7 +14856,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Secret Sword",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, slice: 1},
 		secondary: null,
 		target: "normal",
 		type: "Fighting",
@@ -19570,7 +19570,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "X-Scissor",
 		pp: 15,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, slice: 1},
 		secondary: null,
 		target: "normal",
 		type: "Bug",
