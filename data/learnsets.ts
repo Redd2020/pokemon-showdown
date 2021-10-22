@@ -75529,6 +75529,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			psychocut: ["8M"],
 			furycutter: ["8M"],
 			aircutter: ["8M"],
+			uturn: ["8M"],
 		},
 	},
 	arrokuda: {
