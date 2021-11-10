@@ -4641,6 +4641,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		name: "Swift Strike",
 		rating: 3,
-		num: 177,
+		num: -15,
 	},
 };
