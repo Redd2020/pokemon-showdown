@@ -15251,7 +15251,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		forme: "Ethereal",
 		types: ["Flying", "Fighting"],
 		baseStats: {hp: 70, atk: 100, def: 60, spa: 65, spd: 85, spe: 95},
-		abilities: {0: "Bushido Code"},
+		abilities: {0: "Swift Strike"},
 		heightm: 0.8,
 		weightkg: 18,
 		color: "Red",

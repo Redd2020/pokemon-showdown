@@ -1787,4 +1787,9 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon's Fighting-type attacks always critical hit.",
 		shortDesc: "This Pokemon's Fighting-type attacks always critical hit.",
 	},
+	swiftstrike: {
+		name: "Swift Strike",
+		desc: "If this Pokemon is above 1/2 max HP, its Fighting-type moves have their priority increased by 1.",
+		shortDesc: "If this Pokemon is above 1/2 max HP, its Fighting-type moves have their priority increased by 1.",
+	},
 };
