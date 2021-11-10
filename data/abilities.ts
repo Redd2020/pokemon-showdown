@@ -4637,7 +4637,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	swiftstrike: {
 		onModifyPriority(priority, pokemon, target, move) {
-			if (move?.type === 'Fighting' && pokemon.hp <= pokemon.maxhp / 2) return priority + 1;
+			if (move?.type === 'Fighting' && pokemon.hp >= pokemon.maxhp / 2) return priority + 1;
 		},
 		name: "Swift Strike",
 		rating: 3,
