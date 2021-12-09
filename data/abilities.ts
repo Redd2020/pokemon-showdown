@@ -1,4 +1,4 @@
-import { Item } from "../sim/dex-items";
+import {Item} from "../sim/dex-items";
 
 /*
 
