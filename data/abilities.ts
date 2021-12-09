@@ -1145,6 +1145,15 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				if (pokemon.species.id !== 'castform') forme = 'Castform';
 				break;
 			}
+			if (pokemon.item === 'heatrock') {
+				this.field.setWeather('sunnyday');
+			}
+			if (pokemon.item === 'damprock') {
+				this.field.setWeather('drizzle');
+			}
+			if (pokemon.item === 'smoothrock') {
+				this.field.setWeather('sandstorm');
+			}
 			if (pokemon.isActive && forme) {
 				pokemon.formeChange(forme, this.effect, false, '[msg]');
 			}
