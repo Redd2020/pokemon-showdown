@@ -423,7 +423,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	forecast: {
 		name: "Forecast",
 		desc: "If this Pokemon is a Castform, it summons weather based on the held weather rock. Its type changes to the current weather condition's type, except Sandstorm. If this Pokemon is holding Utility Umbrella and the weather condition is Sunny Day, Desolate Land, Rain Dance, or Primordial Sea, it will not change types.",
-		shortDesc: "Summons weather based on the held weather rock and its type changes to the current weather condition's type, except Sandstorm.",
+		shortDesc: "Summons weather based on the held weather rock; changes type to current weather.",
 		gen7: {
 			desc: "If this Pokemon is a Castform, its type changes to the current weather condition's type, except Sandstorm.",
 		},
