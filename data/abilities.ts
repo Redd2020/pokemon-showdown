@@ -1149,10 +1149,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				this.field.setWeather('sunnyday');
 			}
 			if (pokemon.item === 'damprock') {
-				this.field.setWeather('drizzle');
+				this.field.setWeather('raindance');
 			}
-			if (pokemon.item === 'smoothrock') {
-				this.field.setWeather('sandstorm');
+			if (pokemon.item === 'icyrock') {
+				this.field.setWeather('hail');
 			}
 			if (pokemon.isActive && forme) {
 				pokemon.formeChange(forme, this.effect, false, '[msg]');
