@@ -80027,7 +80027,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			blizzard: ["8M"],
 			bodyslam: ["8M"],
 			boomburst: ["8L75"],
-			calmmind: ["8M", "8S0"],
+			calmmind: ["8M"],
 			charm: ["8M"],
 			crunch: ["8M", "8L35"],
 			darkpulse: ["8M", "8S0"],
@@ -80075,6 +80075,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			stompingtantrum: ["8M", "8L30"],
 			substitute: ["8M"],
 			sunnyday: ["8M"],
+			switcheroo: ["8S0"],
 			taunt: ["8M"],
 			thief: ["8M"],
 			thunder: ["8M"],
@@ -80087,7 +80088,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			wideguard: ["8L50"],
 		},
 		eventData: [
-			{generation: 8, level: 50, moves: ["recover", "calmmind", "darkpulse", "belch"], pokeball: "cherishball"},
+			{generation: 8, level: 50, moves: ["recover", "switcheroo", "darkpulse", "belch"], pokeball: "cherishball"},
 		],
 	},
 	syclant: {

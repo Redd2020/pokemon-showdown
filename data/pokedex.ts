@@ -17715,7 +17715,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	chromera: {
 		num: -60,
 		name: "Chromera",
-		types: ["Dark", "Poison"],
+		types: ["Dark", "Normal"],
 		gender: "N",
 		baseStats: {hp: 85, atk: 85, def: 115, spa: 115, spd: 100, spe: 100},
 		abilities: {0: "Color Change"},
