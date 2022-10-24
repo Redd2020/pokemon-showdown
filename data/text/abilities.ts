@@ -457,9 +457,9 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	forecast: {
 		name: "Forecast",
 		desc: "Summons weather based on held weather rock, its type changes to the current weather condition's type, except Sandstorm. If this Pokemon is holding Utility Umbrella and the weather condition is Sunny Day, Desolate Land, Rain Dance, or Primordial Sea, it will not change types.",
-		shortDesc: "Summons weather based on held weather rock, type changes to the current weather condition's type, except Sandstorm.",
+		shortDesc: "Summons weather based on held weather rock; changes type to the current weather, except Sandstorm.",
 		gen7: {
-			desc: "Summons weather based on held weather rock, its type changes to the current weather condition's type, except Sandstorm.",
+			desc: "Summons weather based on held weather rock; changes type to the current weather, except Sandstorm.",
 		},
 	},
 	forewarn: {
