@@ -6479,7 +6479,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 351,
 		name: "Castform",
 		types: ["Normal"],
-		baseStats: {hp: 99, atk: 100, def: 100, spa: 100, spd: 100, spe: 100},
+		baseStats: {hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100},
 		abilities: {0: "Forecast"},
 		heightm: 0.3,
 		weightkg: 0.8,
