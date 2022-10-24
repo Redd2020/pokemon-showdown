@@ -4,7 +4,7 @@
 'use strict';
 
 const assert = require('../assert');
-const {testNotBothMoves, testSet, testHiddenPower} = require('./tools');
+const {testNotBothMoves, testSet, testHiddenPower, testAlwaysHasMove} = require('./tools');
 
 describe('[Gen 7] Random Battle', () => {
 	const options = {format: 'gen7randombattle'};
@@ -80,5 +80,46 @@ describe('[Gen 7] Random Battle', () => {
 
 	it('should never give Xerneas Assault Vest', () => {
 		testSet('xerneas', options, set => assert.notEqual(set.item, 'Assault Vest'));
+	});
+
+	it('should always give Gastrodon Recover', () => {
+		testAlwaysHasMove('gastrodon', options, 'recover');
+	});
+
+	it('should never give Poliwrath both Rain Dance and Rest', () => {
+		testNotBothMoves('poliwrath', options, 'raindance', 'rest');
+	});
+
+	it('should not give Ursaring Eviolite', () => {
+		testSet('ursaring', options, set => assert.notEqual(set.item, 'Eviolite'));
+	});
+
+	it('should always give Mega Glalie Return', () => testAlwaysHasMove('glaliemega', options, 'return'));
+
+	it('should not give Zebstrika Thunderbolt and Wild Charge', () => {
+		testNotBothMoves('zebstrika', options, 'thunderbolt', 'wildcharge');
+	});
+
+	it('should always give Mega Diancie Moonblast if it has Calm Mind', () => {
+		testSet('dianciemega', options, set => {
+			if (!set.moves.includes('calmmind')) return;
+			assert(set.moves.includes('moonblast'), `Diancie: got ${set.moves}`);
+		});
+	});
+});
+
+describe('[Gen 7] Random Doubles Battle', () => {
+	const options = {format: 'gen7randomdoublesbattle'};
+
+	it("shouldn't give Manectric Intimidate before Mega Evolving", () => {
+		testSet('manectricmega', options, set => {
+			assert.notEqual(set.ability, 'Intimidate');
+		});
+	});
+
+	it("should give Mawile Intimidate before Mega Evolving", () => {
+		testSet('mawilemega', options, set => {
+			assert.equal(set.ability, 'Intimidate');
+		});
 	});
 });

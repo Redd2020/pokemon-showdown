@@ -82,6 +82,20 @@ describe('Neutralizing Gas', function () {
 		assert.fullHP(battle.p1.active[0]);
 	});
 
+	it(`should negate Primal weather Abilities`, function () {
+		battle = common.createBattle([[
+			{species: 'Groudon', item: 'redorb', moves: ['sleeptalk']},
+		], [
+			{species: 'Wynaut', moves: ['sleeptalk']},
+			{species: 'Weezing', ability: 'neutralizinggas', moves: ['sleeptalk']},
+		]]);
+
+		battle.makeChoices('auto', 'switch 2');
+		assert.false(battle.field.isWeather('desolateland'), `Desolate Land should be negated, turning off the weather`);
+		battle.makeChoices('auto', 'switch 2');
+		assert(battle.field.isWeather('desolateland'), `Desolate Land should be active again`);
+	});
+
 	it('should not activate Imposter if Neutralizing Gas leaves the field', function () {
 		battle = common.createBattle();
 		battle.setPlayer('p1', {team: [
@@ -258,6 +272,19 @@ describe('Neutralizing Gas', function () {
 		assert.species(eiscue, 'Eiscue-Noice');
 		battle.makeChoices('auto', 'switch 2');
 		assert.species(eiscue, 'Eiscue-Noice');
+	});
+
+	it(`should not work if it was obtained via Transform`, function () {
+		battle = common.createBattle([[
+			{species: 'Ditto', moves: ['transform']},
+		], [
+			{species: 'Weezing', ability: 'neutralizinggas', moves: ['sleeptalk']},
+			{species: 'Zacian', ability: 'intrepidsword', moves: ['sleeptalk']},
+		]]);
+
+		battle.makeChoices();
+		battle.makeChoices('auto', 'switch 2');
+		assert.statStage(battle.p2.active[0], 'atk', 1);
 	});
 
 	describe(`Ability reactivation order`, function () {

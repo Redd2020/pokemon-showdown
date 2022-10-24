@@ -517,8 +517,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				}
 			}
 			if (statsLowered) {
-				this.add('-ability', target, 'Competitive');
-				this.boost({spa: 2}, target, target, null, true);
+				this.boost({spa: 2}, target, target, null, false, true);
 			}
 		},
 		name: "Competitive",
@@ -616,7 +615,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		onAnyDamage(damage, target, source, effect) {
-			if (effect && effect.id === 'aftermath') {
+			if (effect && effect.name === 'Aftermath') {
 				return false;
 			}
 		},
@@ -643,7 +642,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (move.auraBooster !== this.effectState.target) return;
 			return this.chainModify([move.hasAuraBreak ? 3072 : 5448, 4096]);
 		},
-		isBreakable: true,
 		name: "Dark Aura",
 		rating: 3,
 		num: 186,
@@ -708,8 +706,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				}
 			}
 			if (statsLowered) {
-				this.add('-ability', target, 'Defiant');
-				this.boost({atk: 2}, target, target, null, true);
+				this.boost({atk: 2}, target, target, null, false, true);
 			}
 		},
 		name: "Defiant",
@@ -957,7 +954,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (move.auraBooster !== this.effectState.target) return;
 			return this.chainModify([move.hasAuraBreak ? 3072 : 5448, 4096]);
 		},
-		isBreakable: true,
 		name: "Fairy Aura",
 		rating: 3,
 		num: 187,
@@ -1705,7 +1701,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (status.id === 'flinch') return null;
 		},
 		onBoost(boost, target, source, effect) {
-			if (effect.id === 'intimidate') {
+			if (effect.name === 'Intimidate') {
 				delete boost.atk;
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Inner Focus', '[of] ' + target);
 			}
@@ -1847,7 +1843,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	libero: {
 		onPrepareHit(source, target, move) {
-			if (move.hasBounced || move.sourceEffect === 'snatch') return;
+			if (move.hasBounced || move.isFutureMove || move.sourceEffect === 'snatch') return;
 			const type = move.type;
 			if (type && type !== '???' && source.getTypes().join() !== type) {
 				if (!source.setType(type)) return;
@@ -2134,7 +2130,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	mirrorarmor: {
 		onBoost(boost, target, source, effect) {
 			// Don't bounce self stat changes, or boosts that have already bounced
-			if (target === source || !boost || effect.id === 'mirrorarmor') return;
+			if (target === source || !boost || effect.name === 'Mirror Armor') return;
 			let b: BoostID;
 			for (b in boost) {
 				if (boost[b]! < 0) {
@@ -2336,7 +2332,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (pokemon.showCure === undefined) pokemon.showCure = true;
 
 			if (pokemon.showCure) this.add('-curestatus', pokemon, pokemon.status, '[from] ability: Natural Cure');
-			pokemon.setStatus('');
+			pokemon.clearStatus();
 
 			// only reset .showCure if it's false
 			// (once you know a Pokemon has Natural Cure, its cures are always known)
@@ -2359,8 +2355,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	neutralizinggas: {
 		// Ability suppression implemented in sim/pokemon.ts:Pokemon#ignoringAbility
 		onPreStart(pokemon) {
+			if (pokemon.transformed) return;
 			this.add('-ability', pokemon, 'Neutralizing Gas');
 			pokemon.abilityState.ending = false;
+			const strongWeathers = ['desolateland', 'primordialsea', 'deltastream'];
 			for (const target of this.getAllActive()) {
 				if (target.illusion) {
 					this.singleEvent('End', this.dex.abilities.get('Illusion'), target.abilityState, target, pokemon, 'neutralizinggas');
@@ -2369,9 +2367,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 					delete target.volatiles['slowstart'];
 					this.add('-end', target, 'Slow Start', '[silent]');
 				}
+				if (strongWeathers.includes(target.getAbility().id)) {
+					this.singleEvent('End', this.dex.abilities.get(target.getAbility().id), target.abilityState, target, pokemon, 'neutralizinggas');
+				}
 			}
 		},
 		onEnd(source) {
+			if (source.transformed) return;
 			for (const pokemon of this.getAllActive()) {
 				if (pokemon !== source && pokemon.hasAbility('Neutralizing Gas')) {
 					return;
@@ -2459,7 +2461,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		onBoost(boost, target, source, effect) {
-			if (effect.id === 'intimidate') {
+			if (effect.name === 'Intimidate') {
 				delete boost.atk;
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Oblivious', '[of] ' + target);
 			}
@@ -2520,7 +2522,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		onBoost(boost, target, source, effect) {
-			if (effect.id === 'intimidate') {
+			if (effect.name === 'Intimidate') {
 				delete boost.atk;
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Own Tempo', '[of] ' + target);
 			}
@@ -2533,7 +2535,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	parentalbond: {
 		onPrepareHit(source, target, move) {
 			if (move.category === 'Status' || move.selfdestruct || move.multihit) return;
-			if (['endeavor', 'fling', 'iceball', 'rollout'].includes(move.id)) return;
+			if (['dynamaxcannon', 'endeavor', 'fling', 'iceball', 'rollout'].includes(move.id)) return;
 			if (!move.flags['charge'] && !move.spreadHit && !move.isZ && !move.isMax) {
 				move.multihit = 2;
 				move.multihitType = 'parentalbond';
@@ -2839,7 +2841,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	protean: {
 		onPrepareHit(source, target, move) {
-			if (move.hasBounced || move.sourceEffect === 'snatch') return;
+			if (move.hasBounced || move.isFutureMove || move.sourceEffect === 'snatch') return;
 			const type = move.type;
 			if (type && type !== '???' && source.getTypes().join() !== type) {
 				if (!source.setType(type)) return;
@@ -3010,7 +3012,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	ripen: {
 		onTryHeal(damage, target, source, effect) {
 			if (!effect) return;
-			if (effect.id === 'berryjuice' || effect.id === 'leftovers') {
+			if (effect.name === 'Berry Juice' || effect.name === 'Leftovers') {
 				this.add('-activate', target, 'ability: Ripen');
 			}
 			if ((effect as Item).isBerry) return this.chainModify(2);
@@ -3226,7 +3228,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		onBoost(boost, target, source, effect) {
-			if (effect.id === 'intimidate') {
+			if (effect.name === 'Intimidate') {
 				delete boost.atk;
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Scrappy', '[of] ' + target);
 			}
