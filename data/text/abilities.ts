@@ -1790,6 +1790,6 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	swiftstrike: {
 		name: "Swift Strike",
 		desc: "If this Pokemon is at or above 1/2 max HP, its Fighting-type moves have their priority increased by 1.",
-		shortDesc: "If this Pokemon is at or above 1/2 max HP, its Fighting-type moves have their priority increased by 1.",
+		shortDesc: "If this Pokemon is at or above 1/2 max HP, Fighting-type moves have +1 priority.",
 	},
 };
