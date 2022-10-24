@@ -7107,7 +7107,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "CAP",
 	},
-<<<<<<< HEAD
 	octillerite: {
 		name: "Octillerite",
 		spritenum: 585,
@@ -7373,7 +7372,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 758,
 		gen: -20,
 		isNonstandard: "Past",
-=======
+	},
 	vilevial: {
 		name: "Vile Vial",
 		spritenum: 752,
@@ -7397,6 +7396,5 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: -2,
 		gen: 8,
 		isNonstandard: "CAP",
->>>>>>> 10f09c1339da363fded7676ab7ce398416277aab
 	},
 };
