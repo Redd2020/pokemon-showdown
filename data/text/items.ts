@@ -2413,6 +2413,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	infernapite: {
 		name: "Infernapite",
 		desc: "If held by a Infernape, this item allows it to Mega Evolve in battle.",
+	},
 	vilevial: {
 		name: "Vile Vial",
 		desc: "If held by a Venomicon, its Poison- and Flying-type attacks have 1.2x power.",
