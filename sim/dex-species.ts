@@ -290,11 +290,7 @@ export class Species extends BasicEffect implements Readonly<BasicEffect & Speci
 		if (Array.isArray(data.changesFrom)) this.changesFrom = data.changesFrom[0];
 
 		if (!this.gen && this.num >= 1) {
-<<<<<<< HEAD
-			if (this.num >= 810 || ['Gmax', 'Galar', 'Galar-Zen', 'Ethereal', 'Akuurian'].includes(this.forme)) {
-=======
-			if (this.num >= 810 || ['Gmax', 'Galar', 'Galar-Zen', 'Hisui'].includes(this.forme)) {
->>>>>>> 10f09c1339da363fded7676ab7ce398416277aab
+			if (this.num >= 810 || ['Gmax', 'Galar', 'Galar-Zen', 'Hisui', 'Ethereal', 'Akuurian'].includes(this.forme)) {
 				this.gen = 8;
 			} else if (this.num >= 722 || this.forme.startsWith('Alola') || this.forme === 'Starter') {
 				this.gen = 7;
@@ -487,12 +483,8 @@ export class DexSpecies {
 			if (this.dex.currentMod === 'gen7letsgo' && !species.isNonstandard) {
 				const isLetsGo = (
 					(species.num <= 151 || ['Meltan', 'Melmetal'].includes(species.name)) &&
-<<<<<<< HEAD
-					(!species.forme || ['Alola', 'Mega', 'Mega-X', 'Mega-Y', 'Ethereal-Mega', 'Starter'].includes(species.forme))
-=======
-					(!species.forme || (['Alola', 'Mega', 'Mega-X', 'Mega-Y', 'Starter'].includes(species.forme) &&
+					(!species.forme || (['Alola', 'Mega', 'Mega-X', 'Mega-Y', 'Starter', 'Ethereal-Mega'].includes(species.forme) &&
 					species.name !== 'Pikachu-Alola'))
->>>>>>> 10f09c1339da363fded7676ab7ce398416277aab
 				);
 				if (!isLetsGo) species.isNonstandard = 'Past';
 			}
