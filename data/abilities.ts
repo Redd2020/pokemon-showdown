@@ -4666,7 +4666,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		onModifyType(move) {
-			if (move.id == 'Explosion') {
+			if (move.id === 'Explosion') {
 				move.type = 'Fire';
 			} 
 		},

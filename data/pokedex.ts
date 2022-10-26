@@ -10845,6 +10845,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Frillish",
 		evoLevel: 40,
 		eggGroups: ["Amorphous"],
+		otherFormes: ["Jellicent-Mega"],
+		formeOrder: ["Jellicent", "Jellicent-Mega"],
 	},
 	jellicentmega: {
 		num: 593,
