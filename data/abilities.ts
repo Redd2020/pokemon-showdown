@@ -4661,7 +4661,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	supernova: {
 		onModifyMove(move, pokemon) {
-			if (move.id !== 'Explosion') {
+			if (move.flags['explode']) {
 				move.selfdestruct= false;
 				move.type='Fire';
 			}
