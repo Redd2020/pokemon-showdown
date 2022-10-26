@@ -725,6 +725,7 @@ export const commands: Chat.ChatCommands = {
 					if (move.flags['bite']) details["&#10003; Bite"] = "";
 					if (move.flags['punch']) details["&#10003; Punch"] = "";
 					if (move.flags['kick']) details["&#10003; Kick"] = "";
+					if (move.flags['explode']) details["&#10003; Explode"] = "";
 					if (move.flags['slice']) details["&#10003; Slice"] = "";
 					if (move.flags['erupt']) details["&#10003; Erupt"] = "";
 					if (move.flags['powder']) details["&#10003; Powder"] = "";

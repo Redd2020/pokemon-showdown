@@ -82,6 +82,11 @@ export const Tags: {[id: string]: TagData} = {
 		desc: "Boosted 1.2x by Heavy Hooves.",
 		moveFilter: move => 'kick' in move.flags,
 	},
+	explode: {
+		name: "Explode",
+		desc: "Associated with Explosion",
+		moveFilter: move => 'explode' in move.flags,
+	},
 	slice: {
 		name: "Slice",
 		desc: "Boosted 1.2x by Razor Sharp.",

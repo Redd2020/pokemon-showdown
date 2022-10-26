@@ -935,6 +935,7 @@ export class RandomTeams {
 				if (move.flags['bite']) counter.add('strongjaw');
 				if (move.flags['punch']) counter.add('ironfist');
 				if (move.flags['erupt']) counter.add('moltenrage');
+				if (move.flags['explode']) counter.add('supernova');
 				if (move.flags['kick']) counter.add('heavyhooves');
 				if (move.flags['slice']) counter.add('razorsharp');
 				if (move.flags['sound']) counter.add('sound');
