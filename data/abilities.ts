@@ -4662,8 +4662,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	supernova: {
 		onDamage(damage, target, source, effect) {
 			if (effect.id === 'explode') {
-				if (!this.activeMove) throw new Error("Battle.activeMove is null");
-				if (this.activeMove.id !== 'struggle') return null;
+				return false;
 			}
 		},
 		name: "Supernova",
