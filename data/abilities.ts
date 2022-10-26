@@ -4660,9 +4660,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: -15,
 	},
 	supernova: {
-		onDamage(damage, target, source, effect) {
-			if (effect.id === 'explode') {
-				return false;
+		onModifyMove(move) {
+			if (move.flags['explode']) {
+				move.selfdestruct= false;
 			}
 		},
 		name: "Supernova",
