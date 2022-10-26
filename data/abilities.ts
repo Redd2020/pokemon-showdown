@@ -4617,7 +4617,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	pollution: {
 		// upokecenter says this is implemented as an added secondary effect
 		onModifyMove(move) {
-			if (move.type === 'Electric' || move.target === 'self') return;
+			if (move.type === 'Water' || move.target === 'self') return;
 			if (!move.secondaries) {
 				move.secondaries = [];
 			}
@@ -4663,8 +4663,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onModifyMove(move, pokemon) {
 			if (move.flags['explode']) {
 				move.selfdestruct= false;
-				move.type= 'Fire';
 			}
+		},
+		onModifyType(move) {
+			if (move.id == 'Explosion') {
+				move.type = 'Fire';
+			} 
 		},
 		name: "Supernova",
 		rating: 3,
