@@ -4660,11 +4660,14 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: -15,
 	},
 	supernova: {
-		onModifyPriority(priority, pokemon, target, move) {
-			if (move?.flags['erupt']) return priority + 1;
+		onDamage(damage, target, source, effect) {
+			if (effect.id === 'explode') {
+				if (!this.activeMove) throw new Error("Battle.activeMove is null");
+				if (this.activeMove.id !== 'struggle') return null;
+			}
 		},
 		name: "Supernova",
-		rating: 3.5,
-		num: -11,
+		rating: 3,
+		num: -16,
 	},
 };
