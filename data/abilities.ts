@@ -4679,7 +4679,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (this.field.weatherState.source !== pokemon) return;
 			for (const target of this.getAllActive()) {
 				if (target === pokemon) continue;
-				if (target.hasAbility('supernova')) {
+				if (target.hasAbility('desolateland')) {
 					this.field.weatherState.source = target;
 					return;
 				}
