@@ -4622,7 +4622,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				move.secondaries = [];
 			}
 			move.secondaries.push({
-				chance: 20,
+				chance: 100,
 				status: 'psn',
 				ability: this.dex.abilities.get('pollution'),
 			});
