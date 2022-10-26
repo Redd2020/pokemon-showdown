@@ -6910,7 +6910,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Steel", "Psychic"],
 		gender: "N",
 		baseStats: {hp: 80, atk: 135, def: 130, spa: 95, spd: 90, spe: 70},
-		abilities: {0: "Clear Body", H: "Light Metal"},
+		abilities: {0: "Supernova", H: "Light Metal"},
 		heightm: 1.6,
 		weightkg: 550,
 		color: "Blue",
