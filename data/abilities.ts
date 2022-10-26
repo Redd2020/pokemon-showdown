@@ -4666,7 +4666,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				move.type='Fire';
 			}
 		},
-		onPrepareHit(source, target, move) {
+		onHit(source, target, move) {
 			if (move.flags['explode']) {
 				this.field.setWeather('desolateland');
 			}
