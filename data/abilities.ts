@@ -4617,7 +4617,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	pollution: {
 		// upokecenter says this is implemented as an added secondary effect
 		onModifyMove(move) {
-			if (move.type === 'Water' || move.target === 'self') return;
+			if (move.type === 'Water') return;
 			if (!move.secondaries) {
 				move.secondaries = [];
 			}
@@ -4666,7 +4666,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		onModifyType(move) {
-			if (move.id === 'Explosion') {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.id === 'Explosion' && !noModifyType.includes(move.id) && !(move.isZ && move.category !== 'Status')) {
 				move.type = 'Fire';
 			} 
 		},
