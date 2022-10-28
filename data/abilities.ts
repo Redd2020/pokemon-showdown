@@ -4672,9 +4672,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onHit(target, source, effect) {
 			if (effect && effect.id === 'explosion' && source.hasAbility('supernova') && source.volatiles['supernova']) {
 				this.field.setWeather('desolateland');
-				if (this.field.isWeather('desolateland')) {
-					delete target.volatiles['supernova'];
-				}
 			}
 		},
 		onAnySetWeather(target, source, weather) {
