@@ -4667,7 +4667,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		onStart(source) {
-			source.addVolatile('supernova', this.effectState.source)
+			source.addVolatile('supernova')
 		},
 		onSourceHit(target, source, effect) {
 			if (effect && effect.id === 'explosion' && source.hasAbility('supernova') && source.volatiles['supernova']) {
