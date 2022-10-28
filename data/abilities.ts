@@ -4666,7 +4666,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				move.type='Fire';
 			}
 		},
-		onHit(target, source, move) {
+		onAfterHit(target, source, move) {
 			if (move.flags['explode']) {
 				source.addVolatile('supernova')
 				if (!source.volatiles['supernova']) return;
