@@ -4667,7 +4667,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		onHit(target, source, move) {
-			if (move.flags['explode'] && source.ability === 'Supernova') {
+			if (move.flags['explode'] && source.ability === 'supernova') {
 				source.addVolatile('supernova')
 				if (!source.volatiles['supernova']){
 					this.field.setWeather('desolateland');
