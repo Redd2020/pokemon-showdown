@@ -7373,6 +7373,20 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: -20,
 		isNonstandard: "Past",
 	},
+	miniorite: {
+		name: "Miniorite",
+		spritenum: 625,
+		megaStone: "Minior-Mega",
+		megaEvolves: "Minior",
+		itemUser: ["Minior"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 758,
+		gen: -22,
+		isNonstandard: "Past",
+	},
 	vilevial: {
 		name: "Vile Vial",
 		spritenum: 752,
@@ -7393,7 +7407,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		forcedForme: "Venomicon-Epilogue",
 		itemUser: ["Venomicon-Epilogue"],
-		num: -2,
+		num: -21,
 		gen: 8,
 		isNonstandard: "CAP",
 	},
