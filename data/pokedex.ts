@@ -6910,7 +6910,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Steel", "Psychic"],
 		gender: "N",
 		baseStats: {hp: 80, atk: 135, def: 130, spa: 95, spd: 90, spe: 70},
-		abilities: {0: "Supernova", H: "Light Metal"},
+		abilities: {0: "Clear Body", H: "Light Metal"},
 		heightm: 1.6,
 		weightkg: 550,
 		color: "Blue",
@@ -14332,7 +14332,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		formeOrder: [
 			 // All of the colored Minior Meteor formes (unsupported by PS) are numbers 0-6
 			"Minior-Meteor", "Minior-Meteor", "Minior-Meteor", "Minior-Meteor", "Minior-Meteor", "Minior-Meteor", "Minior-Meteor",
-			"Minior", "Minior-Orange", "Minior-Yellow", "Minior-Green", "Minior-Blue", "Minior-Indigo", "Minior-Violet",
+			"Minior", "Minior-Orange", "Minior-Yellow", "Minior-Green", "Minior-Blue", "Minior-Indigo", "Minior-Violet", "Minior-Mega",
 		],
 	},
 	miniormeteor: {
@@ -14350,6 +14350,21 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Mineral"],
 		requiredAbility: "Shields Down",
 		battleOnly: "Minior",
+	},
+	miniormega: {
+		num: 774,
+		name: "Minior-Mega",
+		baseSpecies: "Minior",
+		forme: "Mega",
+		types: ["Rock", "Fire"],
+		gender: "N",
+		baseStats: {hp: 60, atk: 130, def: 80, spa: 130, spd: 80, spe: 120},
+		abilities: {0: "Supernova"},
+		heightm: 0.3,
+		weightkg: 0.3,
+		color: "Red",
+		eggGroups: ["Mineral"],
+		requiredItem: "Miniorite",
 	},
 	komala: {
 		num: 775,

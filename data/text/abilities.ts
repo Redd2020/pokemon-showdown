@@ -1974,4 +1974,9 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "If this Pokemon is at or above 1/2 max HP, its Fighting-type moves have their priority increased by 1.",
 		shortDesc: "If this Pokemon is at or above 1/2 max HP, Fighting-type moves have +1 priority.",
 	},
+	supernova: {
+		name: "Supernova",
+		desc: "Makes Explosion Fire-type, negates its recoil, and sets Desolate Land after using Explosion",
+		shortDesc: "Makes Explosion Fire-type, negates its recoil, and sets Desolate Land after using Explosion",
+	},
 };

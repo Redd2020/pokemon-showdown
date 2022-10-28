@@ -6033,6 +6033,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	miniormeteor: {
 		isNonstandard: "Past",
 	},
+	miniormega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	komala: {
 		isNonstandard: "Past",
 		tier: "Illegal",
