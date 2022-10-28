@@ -4666,9 +4666,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				move.type='Fire';
 			}
 		},
-		onHit(target, source, move) {
-			source.addVolatile('supernova')
-			if (!source.volatiles['supernova']){
+		onHit(target, Pokemon, move) {
+			Pokemon.addVolatile('supernova')
+			if (!Pokemon.volatiles['supernova']){
 			this.field.setWeather('desolateland');
 			}
 		},
