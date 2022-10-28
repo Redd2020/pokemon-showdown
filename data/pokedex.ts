@@ -14327,7 +14327,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 0.3,
 		color: "Red",
 		eggGroups: ["Mineral"],
-		otherFormes: ["Minior-Meteor"],
+		otherFormes: ["Minior-Meteor", "Minior-Mega"], 
 		cosmeticFormes: ["Minior-Orange", "Minior-Yellow", "Minior-Green", "Minior-Blue", "Minior-Indigo", "Minior-Violet"],
 		formeOrder: [
 			 // All of the colored Minior Meteor formes (unsupported by PS) are numbers 0-6
