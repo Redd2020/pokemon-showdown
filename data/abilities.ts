@@ -4666,8 +4666,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				move.type='Fire';
 			}
 		},
-		onSourceHit(target, source, effect) {
+		onStart(source) {
 			source.addVolatile('supernova', this.effectState.source)
+		},
+		onSourceHit(target, source, effect) {
 			if (effect && effect.id === 'explosion' && source.hasAbility('supernova') && source.volatiles['disable']) {
 				this.field.setWeather('desolateland');
 			}
