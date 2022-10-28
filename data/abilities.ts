@@ -4668,9 +4668,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		},
 		onHit(target, source, move) {
 				source.addVolatile('supernova')
-				if (!source.volatiles['supernova'] && (source.hasAbility('supernova')) && move.flags['explode']) {
+				if ((source.hasAbility('supernova')) && move.flags['explode']) return;
 					this.field.setWeather('desolateland');
-			}
 		},
 		onAnySetWeather(target, source, weather) {
 			const strongWeathers = ['desolateland', 'primordialsea', 'deltastream'];
