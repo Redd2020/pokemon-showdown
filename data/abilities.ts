@@ -4675,7 +4675,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				if (this.field.isWeather('desolateland')) {
 					delete target.volatiles['supernova'];
 				}
-				delete target.volatiles['supernova'];
 			}
 		},
 		onAnySetWeather(target, source, weather) {
