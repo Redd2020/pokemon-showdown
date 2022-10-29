@@ -7396,7 +7396,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: -23,
 		isNonstandard: "Past",
 	},
-	sandslahsite: {
+	sandslashite: {
 		name: "Sandslash",
 		spritenum: 628,
 		megaStone: "Sandslash-Mega",
