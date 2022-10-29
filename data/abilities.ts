@@ -1122,6 +1122,17 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 218,
 	},
 	forecast: {
+		onStart(pokemon) {
+			if (pokemon.hasItem('damprock')) {
+				this.field.setWeather('raindance');
+			} else if (pokemon.hasItem('heatrock')) {
+				this.field.setWeather('sunnyday');
+			} else if (pokemon.hasItem('smoothrock')) {
+				this.field.setWeather('sandstorm');
+			} else if (pokemon.hasItem('icyrock')) {
+				this.field.setWeather('hail');
+			}
+		},
 		onUpdate(pokemon) {
 			if (pokemon.baseSpecies.baseSpecies !== 'Castform' || pokemon.transformed) return;
 			let forme = null;
@@ -1140,18 +1151,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			default:
 				if (pokemon.species.id !== 'castform') forme = 'Castform';
 				break;
-			}
-			if (pokemon.item === 'heatrock') {
-				this.field.setWeather('sunnyday');
-			}
-			if (pokemon.item === 'damprock') {
-				this.field.setWeather('raindance');
-			}
-			if (pokemon.item === 'icyrock') {
-				this.field.setWeather('hail');
-			}
-			if (pokemon.item === 'smoothrock') {
-				this.field.setWeather('sandstorm');
 			}
 			if (pokemon.isActive && forme) {
 				pokemon.formeChange(forme, this.effect, false, '[msg]');
