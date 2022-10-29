@@ -7387,6 +7387,17 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: -22,
 		isNonstandard: "Past",
 	},
+	graystone: {
+		name: "Gray Stone",
+		spritenum: 324,
+		forcedForme: "Kyurem-Origin",
+		itemUser: ["Kyurem-Origin"],
+		num: 758,
+		gen: -23,
+		isNonstandard: "Past",
+	},
+
+
 	vilevial: {
 		name: "Vile Vial",
 		spritenum: 752,

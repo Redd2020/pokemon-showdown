@@ -4693,4 +4693,23 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: -16,
 	},
+	perfectharmony: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Ice' || move.type === 'Fire' || move.type === 'Electric') {
+				this.debug('Perfect Harmony boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Ice' || move.type === 'Fire' || move.type === 'Electric') {
+				this.debug('Perfect Harmony boost');
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Perfect Harmony",
+		rating: 3.5,
+		num: -17,
+	},
 };

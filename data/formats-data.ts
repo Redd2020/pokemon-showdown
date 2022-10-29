@@ -4918,6 +4918,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
+	kyuremorigin: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	keldeo: {
 		tier: "UU",
 		doublesTier: "(DUU)",

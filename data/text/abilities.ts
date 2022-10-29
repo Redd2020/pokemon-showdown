@@ -1979,4 +1979,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "Makes Explosion Fire-type, negates its recoil, and sets Desolate Land after using Explosion",
 		shortDesc: "Makes Explosion Fire-type, negates its recoil, and sets Desolate Land after using Explosion",
 	},
+	perfectharmony: {
+		name: "Perfect Harmony",
+		shortDesc: "This Pokemon's offensive stat is multiplied by 1.5 while using a Fire, Ice, or Electric moves.",
+	},
 };
