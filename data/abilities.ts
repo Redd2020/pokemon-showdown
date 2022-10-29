@@ -2358,15 +2358,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	neutralizinggas: {
 		// Ability suppression implemented in sim/pokemon.ts:Pokemon#ignoringAbility
 		onPreStart(pokemon) {
-			if (this.field.weatherState.source !== pokemon) return;
-			for (const target of this.getAllActive()) {
-				if (target === pokemon) continue;
-				if (target.hasAbility('desolateland' || (target.hasAbility('supernova') && target.volatiles['supernova']))) {
-					this.field.weatherState.source = target;
-					return;
-				}
-			}
-			this.field.clearWeather();
 			if (pokemon.transformed) return;
 			this.add('-ability', pokemon, 'Neutralizing Gas');
 			pokemon.abilityState.ending = false;
@@ -2384,6 +2375,15 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				}
 				
 			}
+			if (this.field.weatherState.source !== pokemon) return;
+			for (const target of this.getAllActive()) {
+				if (target === pokemon) continue;
+				if (target.hasAbility('supernova') && target.volatiles['supernova']) {
+					this.field.weatherState.source = target;
+					return;
+				}
+			}
+			this.field.clearWeather();
 		},
 		onEnd(source) {
 			if (source.transformed) return;
