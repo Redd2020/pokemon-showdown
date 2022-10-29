@@ -7389,7 +7389,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	graystone: {
 		name: "Gray Stone",
-		spritenum: 324,
+		spritenum: 321,
 		forcedForme: "Kyurem-Origin",
 		itemUser: ["Kyurem-Origin"],
 		num: 758,
