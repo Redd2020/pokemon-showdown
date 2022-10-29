@@ -887,7 +887,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseSpecies: "Sandslash",
 		forme: "Mega",
 		types: ["Ground"],
-		baseStats: {hp: 78, atk: 104, def: 88, spa: 149, spd: 95, spe: 120},
+		baseStats: {hp: 75, atk: 125, def: 155, spa: 45, spd: 80, spe: 70},
 		abilities: {0: "Spiteful Spines"},
 		heightm: 1,
 		weightkg: 29.5,
