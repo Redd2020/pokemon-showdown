@@ -7397,7 +7397,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		isNonstandard: "Past",
 	},
 	sandslashite: {
-		name: "Sandslash",
+		name: "Sandslashite",
 		spritenum: 628,
 		megaStone: "Sandslash-Mega",
 		megaEvolves: "Sandslash",
