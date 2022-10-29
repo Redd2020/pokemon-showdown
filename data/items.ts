@@ -7396,6 +7396,20 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: -23,
 		isNonstandard: "Past",
 	},
+	sandslahsite: {
+		name: "Sandslash",
+		spritenum: 628,
+		megaStone: "Sandslash-Mega",
+		megaEvolves: "Sandslash",
+		itemUser: ["Sandslash"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 758,
+		gen: -24,
+		isNonstandard: "Past",
+	},
 
 
 	vilevial: {

@@ -1983,4 +1983,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Perfect Harmony",
 		shortDesc: "This Pokemon's offensive stat is multiplied by 1.5 while using a Fire, Ice, or Electric moves.",
 	},
+	spitefulspines: {
+		name: "Spiteful Spines",
+		shortDesc: "When damaged, a layer of Spikes is set on the opponents side.",
+	},
 };

@@ -2418,6 +2418,14 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Miniorite",
 		desc: "If held by a Minior, this item allows it to Mega Evolve in battle.",
 	},
+	graystone: {
+		name: "Gray Stone",
+		desc: "If held by Kyurem, it reverts it to its Origin form.",
+	},
+	sandslahsite: {
+		name: "Sandslashite",
+		desc: "If held by a Sandslash, this item allows it to Mega Evolve in battle.",
+	},
 	vilevial: {
 		name: "Vile Vial",
 		desc: "If held by a Venomicon, its Poison- and Flying-type attacks have 1.2x power.",

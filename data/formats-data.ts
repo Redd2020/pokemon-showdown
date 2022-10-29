@@ -329,6 +329,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
+	sandslashmega: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	sandslashalola: {
 		randomBattleMoves: ["earthquake", "ironhead", "knockoff", "rapidspin", "swordsdance", "tripleaxel"],
 		randomBattleLevel: 86,

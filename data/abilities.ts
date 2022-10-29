@@ -4712,4 +4712,12 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: -17,
 	},
+	spitefulspines: {
+		onDamagingHit(damage, target, source, move) {
+			source.side.addSideCondition('spikes');
+		},
+		name: "Spiteful Spines",
+		rating: 2,
+		num: -18,
+	},
 };
