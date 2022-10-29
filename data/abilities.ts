@@ -748,7 +748,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (this.field.weatherState.source !== pokemon) return;
 			for (const target of this.getAllActive()) {
 				if (target === pokemon) continue;
-				if (target.hasAbility('desolateland' || (target.hasAbility('supernova') && target.volatiles['supernova'] && this.field.getWeather().id !== 'desolateland'))) {
+				if (target.hasAbility('desolateland' || (target.hasAbility('supernova') && target.volatiles['supernova']))) {
 					this.field.weatherState.source = target;
 					return;
 				}
@@ -4683,7 +4683,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (this.field.weatherState.source !== pokemon) return;
 			for (const target of this.getAllActive()) {
 				if (target === pokemon) continue;
-				if (target.hasAbility('desolateland' || (target.hasAbility('supernova') && target.volatiles['supernova'] && this.field.getWeather().id !== 'desolateland'))) {
+				if (target.hasAbility('desolateland' || (target.hasAbility('supernova') && target.volatiles['supernova']))) {
 					this.field.weatherState.source = target;
 					return;
 				}
