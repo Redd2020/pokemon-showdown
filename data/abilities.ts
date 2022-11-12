@@ -4729,16 +4729,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				this.effectState.lastMove = '';
 				this.effectState.numConsecutive = 0;
 			},
-			onModifyDamage(damage, source, target, move) {
-				if (target.getMoveHitData(move).typeMod < 0) {
-					this.debug('Tinted Lens boost');
-					return this.chainModify(2);
-				}
-				const dmgMod = [0x1000, 0x1333, 0x1666, 0x1999, 0x1CCC, 0x2000];
-				const numConsecutive = this.effectState.numConsecutive > 5 ? 5 : this.effectState.numConsecutive;
-				return this.chainModify([dmgMod[numConsecutive], 0x1000]);
-				
-			},
 			onTryMovePriority: -2,
 			onTryMove(pokemon, target, move) {
 				if (!pokemon.hasItem('metronome')) {
