@@ -4720,33 +4720,4 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2,
 		num: -18,
 	},
-	maestro: {
-		onStart(pokemon) {
-			pokemon.addVolatile('metronome');
-		},
-		condition: {
-			onStart(pokemon) {
-				this.effectState.lastMove = '';
-				this.effectState.numConsecutive = 0;
-			},
-			onTryMovePriority: -2,
-			onTryMove(pokemon, target, move) {
-				if (!pokemon.hasItem('metronome')) {
-					pokemon.removeVolatile('metronome');
-					return;
-				}
-				if (this.effectState.lastMove === move.id && pokemon.moveLastTurnResult) {
-					this.effectState.numConsecutive++;
-				} else if (pokemon.volatiles['twoturnmove'] && this.effectState.lastMove !== move.id) {
-					this.effectState.numConsecutive = 1;
-				} else {
-					this.effectState.numConsecutive = 0;
-				}
-				this.effectState.lastMove = move.id;
-			},
-		},
-		name: "Maestro",
-		rating: 2,
-		num: -19,
-	},
 };
