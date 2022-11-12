@@ -4720,7 +4720,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2,
 		num: -18,
 	},
-	mmaestro: {
+	maestro: {
 		onStart(pokemon) {
 			pokemon.addVolatile('metronome');
 		},
